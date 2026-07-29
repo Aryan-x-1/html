@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CSS Selectors Example</title>
+
+    <style>
+
+        h2{
+            text-align:center;
+        }
+
+        p::first-line{
+            font-weight:bold;
+        }
+
+        p::first-letter{
+            color:red;
+            font-size:30px;
+        }
+
+        h3 + h3{
+            color:green;
+        }
+
+        div ul{
+            border:2px solid black;
+            padding:15px;
+            width:250px;
+        }
+
+        li:first-child a{
+            color:red;
+        }
+
+        a:link{
+            color:blue;
+        }
+
+        a:visited{
+            color:purple;
+        }
+
+        a:hover{
+            text-decoration:underline;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+
+        <h2>Welcome to Our Website</h2>
+
+        <p>
+            Learning CSS is interesting because it helps us design attractive
+            webpages. Practice every day to improve your web development skills.
+        </p>
+
+        <p>
+            CSS provides many selectors and pseudo-elements that make styling
+            webpages easier. Understanding them will help you build better websites.
+        </p>
+
+    </section>
+
+    <div>
+
+        <h3>HTML Basics</h3>
+
+        <h3>CSS Basics</h3>
+
+    </div>
+
+    <div>
+
+        <ul>
+
+            <li><a href="https://www.google.com">Google</a></li>
+
+            <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+
+            <li><a href="https://www.w3schools.com">W3Schools</a></li>
+
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

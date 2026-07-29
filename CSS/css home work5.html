@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Simple Blog Post</title>
+
+    <style>
+
+        .blog{
+            width:60%;
+            margin:20px auto;
+            border:2px solid black;
+            padding:20px;
+            background-color:beige;
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        h4{
+            display:inline-block;
+            margin-right:30px;
+        }
+        h4+h4{
+            color:navy;
+        }
+
+        p::first-line{
+            font-weight:bold;
+        }
+
+        p::first-letter{
+            font-size:30px;
+            color:red;
+        }
+
+        blockquote::before{
+            content:"“";
+            font-size:30px;
+            color:indigo;
+        }
+
+        a:link{
+            color:blue;
+        }
+
+        a:visited{
+            color:purple;
+        }
+
+        a:hover{
+            color:red;
+            text-decoration:underline;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="blog">
+
+        <h2>My First Blog Post</h2>
+
+        <h4>Author : Vishal</h4>
+
+        <h4>Date : 30 July 2026</h4>
+
+        <p>
+            Learning HTML and CSS is exciting because it allows us to create beautiful
+            webpages. By practicing regularly, we can improve our web development
+            skills and build attractive websites for different purposes.
+        </p>
+
+        <blockquote>
+            Success comes to those who never stop learning.
+        </blockquote>
+
+        <p>
+            Read more on
+            <a href="https://www.w3schools.com">W3Schools</a>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
