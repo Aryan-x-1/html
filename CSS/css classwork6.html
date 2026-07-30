@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Product Card</title>
+
+    <style>
+
+        .card{
+            width:300px;
+            border:2px solid black;
+            padding:20px;
+            margin:30px auto;
+            text-align:center;
+            background-color:white;
+        }
+
+        .product-image{
+            width:200px;
+            height:200px;
+            border:2px solid black;
+            border-top-left-radius:20px;
+            border-bottom-right-radius:20px;
+        }
+
+        button{
+            padding:10px 20px;
+            font-size:16px;
+        }
+
+        /* Small Screens */
+
+        @media screen and (max-width:600px){
+
+            .card{
+                text-align:center;
+            }
+
+            h2{
+                font-size:22px;
+            }
+
+            p{
+                font-size:14px;
+            }
+
+            button{
+                font-size:14px;
+            }
+
+        }
+
+        /* Landscape Mode */
+
+        @media screen and (orientation:landscape){
+
+            .card{
+                background-color:lightblue;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img class="product-image"
+        src="https://m.media-amazon.com/images/I/61RahTQtAqL.jpg"
+        alt="Product Image">
+
+        <h2>Wireless Headphones</h2>
+
+        <p>Price: $49.99</p>
+
+        <button>Buy Now</button>
+
+    </div>
+
+</body>
+
+</html>

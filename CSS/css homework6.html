@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Featured Blog Section</title>
+
+    <style>
+
+        .blog-section{
+            background-color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        .blog{
+            display:inline-block;
+            width:300px;
+            border:2px solid black;
+            padding:15px;
+            margin:15px;
+            vertical-align:top;
+        }
+
+        /* Styling your images */
+
+        .blog-image{
+            width:250px;
+            height:180px;
+            border-top-right-radius:20px;
+            border-bottom-left-radius:20px;
+        }
+
+        /* Links starting with https */
+
+        a[href^="https"]{
+            color:red;
+        }
+
+        /* Small Screens */
+
+        @media screen and (max-width:600px){
+
+            .blog{
+                display:block;
+                width:90%;
+                margin:20px auto;
+            }
+
+            h3{
+                font-size:20px;
+            }
+
+            p{
+                font-size:14px;
+            }
+
+            a{
+                font-size:14px;
+            }
+
+        }
+
+        /* Portrait Mode */
+
+        @media screen and (orientation:portrait){
+
+            .blog-section{
+                background-color:lightyellow;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="blog-section">
+
+        <div class="blog">
+
+            <h3>Learning HTML</h3>
+
+            <img class="blog-image"
+            src="https://play-lh.googleusercontent.com/N3wYr1FRP1yzKzhHoY7kR7v49tKR-kIRYP-jizRw2EEmP3TgcpzvZeOt0wxH3FWQHFAvNJSRsPOlHy8_XzpI"
+            alt="HTML">
+
+            <p>
+                HTML is the foundation of every webpage.
+            </p>
+
+            <a href="https://www.w3schools.com/html/">Read More</a>
+
+        </div>
+
+        <div class="blog">
+
+            <h3>Learning CSS</h3>
+
+            <img class="blog-image"
+            src="https://media.licdn.com/dms/image/v2/C4D08AQEyDGpyHmRIdw/croft-frontend-shrinkToFit1024/croft-frontend-shrinkToFit1024/0/1597380712586?e=2147483647&v=beta&t=rJu54NyuU5F6jZBaCXi67npMyzWlbx23n1iXn-MSl7k"
+            alt="CSS">
+
+            <p>
+                CSS is used to design beautiful webpages.
+            </p>
+
+            <a href="https://www.w3schools.com/css/">Read More</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
