@@ -1,19 +1,182 @@
-h1{
-
-    color:red;
-
-}
-
-p{
-
-    color:blue;
-
-    font-size:20px;
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
 
-    background-color:lightyellow;
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:white;
 
 }
+
+
+.container{
+
+    width:100%;
+
+    height:100vh;
+
+    display:flex;
+
+}
+
+.left{
+    width: 50%;
+
+    background: linear-gradient(
+    to bottom,
+    #9c9dc0,
+    #fac693
+);
+}
+
+.right{
+
+    width:50%;
+
+    background:white;
+
+    padding-top:115px;
+
+    padding-left:40px;
+
+    padding-right:40px;
+
+}
+
+.right h2{
+
+    color:#b56b59;
+
+    font-size:36px;
+
+    font-weight:normal;
+
+    margin-bottom:35px;
+
+}
+
+label{
+
+    display:block;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+    color:#333;
+
+}
+
+input[type=email],
+input[type=text],
+input[type=password]{
+
+    width:100%;
+
+    height:42px;
+
+    border:1px solid #cccccc;
+
+    padding-left:10px;
+
+    font-size:16px;
+
+    margin-bottom:22px;
+
+}
+
+.remember{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:22px;
+
+}
+
+.remember input{
+
+    margin-right:8px;
+
+}
+
+.remember label{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:normal;
+
+}
+
+button{
+
+    width:100%;
+
+    height:44px;
+
+    border:none;
+
+    background:#c86f5d;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#b8614e;
+
+}
+
+
+@media screen and (max-width:600px){
+
+    .container{
+
+        width:100%;
+
+        height:100vh;
+
+        display:block;
+
+    }
+
+    .left{
+
+        display:none;
+
+    }
+
+    .right{
+
+        width:100%;
+
+        padding:45px 30px;
+
+    }
+
+    .right h2{
+
+        font-size:32px;
+
+        margin-bottom:30px;
+
+    }
+
+}
+
+
+
