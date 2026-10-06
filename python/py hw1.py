@@ -24,7 +24,7 @@ print("total cost as integer:", total_cost_integer)
 total_cost_string = str(total_cost)
 print("The total cost of items purchased is " + total_cost_string + " rupees")
 
-delivery_charge = random.randint(5, 10)\
+delivery_charge = random.randint(5, 10)
 
 final_total_cost = total_cost + delivery_charge
 print("Delivery charge:", delivery_charge)
